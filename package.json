@@ -1,0 +1,29 @@
+{
+  "name": "@learning-code-npm/lib",
+  "version": "1.0.0",
+  "description": "A library demo for learning-code-npm.",
+  "author": "Akira",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "browser": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "scripts": {
+    "build": "vite build && npm run build:types",
+    "build:types": "node scripts/buildTypes.mjs"
+  },
+  "devDependencies": {
+    "dts-bundle-generator": "^8.0.1",
+    "vite": "^4.2.1",
+    "vite-plugin-banner": "^0.7.0"
+  }
+}
